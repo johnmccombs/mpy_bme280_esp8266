@@ -22,6 +22,8 @@ bme = bme280.BME280(i2c=i2c)
 print(bme.values)
 ```
 
+
+
 #### Detailed usage ####
 
 The `values` property is a convenience function that provides a tuple of human-readable string values to quickly check that the sensor is working. In practice, the method to use is `read_compensated_data()` which returns a `(temperature, pressure, humidity)`-tuple:
